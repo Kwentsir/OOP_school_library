@@ -11,7 +11,7 @@ class Person
 
   private
 
-  def is_of_age?
+  def is_of_age? # rubocop:todo Naming/PredicateName
     @age >= 18
   end
 
