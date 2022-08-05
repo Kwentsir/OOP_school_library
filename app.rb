@@ -43,9 +43,17 @@ class App
 
   def list_people
     if @people.length.positive?
-      @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" } 
-    else 
-      puts 'Enter details of person'
+      @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    else
+      puts 'Enter details of person!'
+    end
+  end
+
+  def list_books
+    if @books.length.positive?
+      @books.each { |book| puts "Title: \"#{book.title}\", Author: #{book.author}" }
+    else
+      puts 'You have no books added!'
     end
 end
 end
