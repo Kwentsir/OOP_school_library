@@ -15,5 +15,10 @@ class App
     @people.push(student)
   end
 
+  def create_teacher(specialization, age, name)
+    teacher = Teacher.new(specialization, age, name)
+    @people.push(teacher)
+  end
+
   
 end
