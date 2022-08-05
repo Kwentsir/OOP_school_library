@@ -1,7 +1,7 @@
-require "./book"
-require "./teacher"
-require "./student"
-require "./rental"
+require './book'
+require './teacher'
+require './student'
+require './rental'
 
 class App
   def initialize
@@ -29,4 +29,17 @@ class App
     rental = Rental.new(date, person, book)
     @rentals.push(rental)
   end
+
+  def list_rentals(person_id)
+    person_rentals = @rentals.select { |rental| rental.person.id == person_id }
+    if person_rentals.length.positive?
+      person_rentals.each do |rental|
+        puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
+      end
+    else
+      puts 'The selected person has no rentals'
+    end
+  end
+
+  
 end
