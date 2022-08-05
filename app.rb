@@ -20,5 +20,10 @@ class App
     @people.push(teacher)
   end
 
+  def add_book(title, author)
+    book = Book.new(title, author)
+    @books.push(book)
+  end
+
   
 end
