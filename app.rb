@@ -119,4 +119,11 @@ def rentals_per_person
   end
 end
 
+  def run_program
+    puts 'Enjoy the School Library App!'
+    display_actions
+  end
+
+  def display_actions
+    
 end
