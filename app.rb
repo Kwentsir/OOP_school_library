@@ -91,5 +91,22 @@ end
     puts 'Books created successfully'
   end
 
-  
+  def create_rental
+    if @books.length.positive? && @people.length.positive?
+        puts 'Select a book from the following list by number'
+        @books.each_with_index { |book, index| puts "#{index} Title: \"#{book.title}\", Author: #{book.author}" }
+        book_id = gets.chomp.to_i
+        puts 'Select a person from the following list by number'
+        @people.each_with_index do |person, index| puts "#{index} [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        end
+        person_id = gets.chomp.to_i
+        print 'Enter the date in this format YYYY/MM/DD:'
+        date = gets.chomp
+        add_rental(@books[book_id], @people[person_id], date)
+        puts 'Rental created successfully'
+    else
+        puts 'Please add a book and/or a person before creating a rental'
+    end
+end
+
 end
