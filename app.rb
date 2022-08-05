@@ -41,5 +41,11 @@ class App
     end
   end
 
-  
+  def list_people
+    if @people.length.positive?
+      @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" } 
+    else 
+      puts 'Enter details of person'
+    end
+end
 end
