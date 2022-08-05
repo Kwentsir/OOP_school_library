@@ -108,5 +108,15 @@ end
         puts 'Please add a book and/or a person before creating a rental'
     end
 end
+  
+def rentals_per_person
+  if @rentals.length.positive?
+    print 'Enter id of the person you want rentals for:'
+    person_id = gets.chomp.to_i
+    list_rentals(person_id)
+  else
+    puts 'Rentals is empty!'
+  end
+end
 
 end
