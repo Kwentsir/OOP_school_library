@@ -120,7 +120,7 @@ class App
     end
   end
 
-  def run_program
+  def run
     puts 'Enjoy the School Library App!'
     display_actions
   end
