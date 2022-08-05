@@ -25,5 +25,8 @@ class App
     @books.push(book)
   end
 
-  
+  def add_rental(book, person, date)
+    rental = Rental.new(date, person, book)
+    @rentals.push(rental)
+  end
 end
