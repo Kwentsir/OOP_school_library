@@ -2,7 +2,7 @@ require './book'
 require './teacher'
 require './student'
 require './rental'
-
+# rubocop:disable Metrics
 class App
   def initialize
     @rentals = []
@@ -161,3 +161,5 @@ class App
     display_actions
   end
 end
+
+# rubocop:enable Metrics

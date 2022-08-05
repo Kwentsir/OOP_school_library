@@ -1,6 +1,6 @@
 require './app'
 def main
-    App.new.run_program
+  App.new.run_program
 end
 
 main
