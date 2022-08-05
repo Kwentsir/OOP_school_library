@@ -56,4 +56,30 @@ class App
       puts 'You have no books added!'
     end
 end
+
+  def create_person
+    print 'Do you want to create a student (1) or a teacher (2)? [Enter numeber]: '
+    person_option = gets.chomp.to_i
+    if [1, 2].include?(person_option)
+      print 'Enter age'
+      age = gets.chomp
+      print 'Enter name'
+      name = gets.chomp
+      if person_option == 1
+        print 'Has Parent permission? [Y/N]:'
+        permit = gets.chomp
+        permission = permit.downcase == 'y'
+        create_student(age, name, permission)
+      else
+        print 'Enter specializatin:'
+        specializatin = gets.chomp
+        create_teacher(specializatin, age, name)
+      end
+      puts 'Person created successfully'
+    else
+        puts 'Invalid option'
+        create_person
+    end
+end
+
 end
