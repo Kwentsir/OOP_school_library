@@ -82,4 +82,14 @@ end
     end
 end
 
+  def create_book
+    print 'Enter title'
+    title = gets.chomp
+    print 'Enter author:'
+    author = gets.chomp
+    add_book(title, author)
+    puts 'Books created successfully'
+  end
+
+  
 end
