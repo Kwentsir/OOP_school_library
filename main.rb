@@ -1,6 +1,6 @@
-require './app'
+require './input'
 def main
-  App.new.run_program
+  Input.new.run_program
 end
 
 main
