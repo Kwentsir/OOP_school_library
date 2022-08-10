@@ -9,7 +9,7 @@
 ## Getting Started
 
 - clone the repository by running
-git clone `https://github.com/Kwentsir/OOP_school_library.git`
+  git clone `https://github.com/Kwentsir/OOP_school_library.git`
 - navigate to the folder
   cd `OOP_school_library`
 
@@ -20,6 +20,12 @@ git clone `https://github.com/Kwentsir/OOP_school_library.git`
 - [GitHub](https://github.com/Kwentsir)
 - [Twitter](https://twitter.com/jkwentsir)
 - [LinkedIn](https://www.linkedin.com/in/josephkwentsir/)
+
+👤 **Ilham Bouaik**
+
+- GitHub[@bouaik ilham](https://github.com/BouaikIlham)
+- Twitter[@IlhamBouaik](https://twitter.com/IlhamBouaik)
+- LinkedIn[@BouaikIlham](https://www.linkedin.com/in/bouaik-ilham-478478230/)
 
 ## 🤝 Contributing
 
