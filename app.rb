@@ -13,14 +13,14 @@ class App
     @rentals = []
     @books = []
     @people = []
-    @people_path = './../file/people.json'
-    @books_path = './../file/books.json'
-    @rentals_path = './../file/rentals.json'
+    @people_path = './../output/people.json'
+    @books_path = './../output/books.json'
+    @rentals_path = './../output/rentals.json'
     files_path
   end
 
   def files_path
-    FileUtils.mkdir_p('./../file') unless File.directory?('./../file')
+    FileUtils.mkdir_p('./../output') unless File.directory?('./../output')
     File.write(@people_path, []) unless File.exist?(@people_path)
     File.write(@books_path, []) unless File.exist?(@books_path)
     File.write(@rentals_path, []) unless File.exist?(@rentals_path)
@@ -93,7 +93,7 @@ class App
                   {
                     age: person.age,
                     name: person.name,
-                    specializatin: person.specializatin
+                    specialization: person.specialization
                   }
                 end
 
